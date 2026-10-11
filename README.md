@@ -86,4 +86,4 @@ Amounts are stored as whole numbers of cents to avoid floating-point rounding er
 
 **Vercel:** [vercel.com/new](https://expense-tracker-one-bay-13.vercel.app/)). Vite is detected automatically.
 
-**Netlify:** [Expense-Tracker-netlify](https://fabulous-froyo-35bfab.netlify.app).
+**Netlify:**[ [Expense-Tracker-netlify] (https://mariamhus-expense-tracker.netlify.app/)
