@@ -84,6 +84,6 @@ Amounts are stored as whole numbers of cents to avoid floating-point rounding er
 
 ## Deploying
 
-**Vercel:** import the repository at [vercel.com/new](https://vercel.com/new). Vite is detected automatically.
+**Vercel:** [vercel.com/new](https://expense-tracker-one-bay-13.vercel.app/)). Vite is detected automatically.
 
-**Netlify:** import the repository, set the build command to `npm run build` and the publish directory to `dist`.
+**Netlify:** [Expense-Tracker-netlify](https://fabulous-froyo-35bfab.netlify.app).
