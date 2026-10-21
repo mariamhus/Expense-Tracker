@@ -2,34 +2,32 @@
 
 A personal expense tracker built with React and TypeScript. Log what you spend, sort it into categories, set a monthly budget, and see where your money goes with a category breakdown and a day-by-day chart. Everything is saved in the browser, so there's no sign-up and no server.
 
-**Live demo:** _add your Vercel or Netlify link here_
+**Live demo:** [expense-tracker-one-bay-13.vercel.app](https://expense-tracker-one-bay-13.vercel.app/) · [Netlify mirror](https://mariamhus-expense-tracker.netlify.app/)
 
-![Screenshot](./screenshot.png)
+<img width="1345" height="910" alt="image" src="https://github.com/user-attachments/assets/0faaa231-0f64-4225-85ad-5385ca6af26b" />
+
 
 ## Features
 
-- Add, edit, and delete expenses with amount, description, category, and date
-- Form validation with clear messages next to each field
-- Undo after deleting an expense
-- Monthly budget with a spending bar that shows each category's share and where the budget line falls
-- Amount left or overspent, daily average, and a comparison with the same point last month
-- Category breakdown with totals and percentages; select a category to filter the list and chart
-- Day-by-day spending chart with tooltips, plus a table view for exact values
-- Search expenses by description or category
-- Browse previous months
-- Export a month to CSV
-- Currency choice (USD, EUR, GBP, EGP, SAR, AED, INR, JPY)
-- Sample data on first visit so the dashboard isn't empty
-- Data saved in local storage
+- Add, edit, and delete expenses with an amount, description, category, and date
+- Undo a deletion from the confirmation message
+- Monthly budget with a spending bar split by category and a marker showing the budget limit
+- Amount left or amount over budget, shown at a glance
+- Quick stats: daily average and a comparison with the same point last month
+- Category breakdown that doubles as a filter, from the list or the bar
+- Spending-by-day chart with tooltips, plus a table view for exact numbers
+- Search, browse previous months, and export to CSV
+- Currency picker, including EGP
+- Sample data on the first visit so the dashboard looks full, with a one-click option to clear it
 - Automatic light and dark mode
-- Accessible: keyboard-friendly dialog, labelled controls, visible focus, color-blind-safe category palette, and reduced-motion support
+- Amounts stored as whole numbers of cents to avoid floating-point rounding errors
 
 ## Tech stack
 
 - [React 19](https://react.dev/) with TypeScript
 - [Vite](https://vite.dev/) for development and builds
 - [Tailwind CSS v4](https://tailwindcss.com/)
-- [Recharts](https://recharts.org/) for the daily spending chart, loaded on demand
+- [Recharts](https://recharts.org/) for the daily chart
 - [Lucide](https://lucide.dev/) icons
 
 ## Getting started
@@ -37,8 +35,8 @@ A personal expense tracker built with React and TypeScript. Log what you spend, 
 You need [Node.js](https://nodejs.org/) 20.19 or newer.
 
 ```bash
-git clone https://github.com/<your-username>/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/mariamhus/Expense-Tracker.git
+cd Expense-Tracker
 npm install
 npm run dev
 ```
@@ -80,11 +78,8 @@ src/
 └── types.ts
 ```
 
-Amounts are stored as whole numbers of cents to avoid floating-point rounding errors.
-
 ## Deploying
 
-**Vercel:** [vercel.com/new](https://expense-tracker-one-bay-13.vercel.app/)). Vite is detected automatically.
+**Vercel:** import the repository at [vercel.com/new](https://vercel.com/new). Vite is detected automatically.
 
-**Netlify:**[ [Expense-Tracker-netlify] (https://mariamhus-expense-tracker.netlify.app/)
-**note**: Netlify will work with vpn if you are connecting from Egypt.
+**Netlify:** import the repository, set the build command to `npm run build` and the publish directory to `dist`.
